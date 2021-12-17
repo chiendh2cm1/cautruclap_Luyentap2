@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1: In dãy Finonaci-->
+<h2>Dãy Fininaci</h2>
+<script>
+    let N = parseInt(prompt("Số lượng"))
+    let number1 = 1;
+    let number2 = 1;
+    let cout = '';
+    let num;
+    while (N>0) {
+        cout += number1 +' ';
+        num = number1 + number2;
+        number1 = number2;
+        number2 = num;
+        N--;
+    }
+    document.write("dãy số :" +  cout)
+</script>
+</body>
+</html>
